@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8eb2e86e946ebea41a442ec165d6db37, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -119,6 +119,82 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &90042407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8841706926471734270, guid: 2fd3e07afe5b461490fb8e314976b1b0, type: 3}
+  m_PrefabInstance: {fileID: 614827829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &338508440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 807411044}
+    m_Modifications:
+    - target: {fileID: 2521991836627487249, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_Name
+      value: Silenced Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.028
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.027
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347952425021297662, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: shootingAction.m_Reference
+      value: 
+      objectReference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+--- !u!4 &338508441 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+  m_PrefabInstance: {fileID: 338508440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &338508442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2521991836627487249, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+  m_PrefabInstance: {fileID: 338508440}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &408460179
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 807411044}
   - component: {fileID: 807411045}
+  - component: {fileID: 807411046}
   m_Layer: 0
   m_Name: Left Hand
   m_TagString: Untagged
@@ -571,6 +648,7 @@ Transform:
   - {fileID: 1697958485}
   - {fileID: 1599161115}
   - {fileID: 2116100811}
+  - {fileID: 338508441}
   m_Father: {fileID: 1276783155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &807411045
@@ -642,6 +720,36 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+--- !u!114 &807411046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807411043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece725cff3904c745a761cfe9a51dbda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PistolActivatorScript
+  toggleAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Toggle
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6b107d53-5aa4-44e3-a547-5f5dcf12af2b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8226566119356278320, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  activateOnStart: 0
+  goToActivateOnPistolActivated:
+  - {fileID: 338508442}
+  goToActivateOnPistolDeactivated:
+  - {fileID: 1697958486}
+  - {fileID: 1881244119}
 --- !u!1 &867037605
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +853,7 @@ GameObject:
   - component: {fileID: 1012979893}
   - component: {fileID: 1012979894}
   - component: {fileID: 1012979895}
+  - component: {fileID: 1012979896}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: Untagged
@@ -769,6 +878,7 @@ Transform:
   - {fileID: 1502929177}
   - {fileID: 1516578897}
   - {fileID: 614827830}
+  - {fileID: 1680274781}
   m_Father: {fileID: 1276783155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1012979894
@@ -865,6 +975,36 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -8061240218431744966, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &1012979896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012979892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece725cff3904c745a761cfe9a51dbda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PistolActivatorScript
+  toggleAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Toggle
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 2fc3dd05-cb15-450d-b542-c8423849ff3b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -5569494234114704231, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  activateOnStart: 0
+  goToActivateOnPistolActivated:
+  - {fileID: 1680274782}
+  goToActivateOnPistolDeactivated:
+  - {fileID: 1651385822}
+  - {fileID: 90042407}
 --- !u!1 &1241046315
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +1014,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1241046316}
-  - component: {fileID: 1241046317}
   - component: {fileID: 1241046318}
   m_Layer: 0
   m_Name: Turn
@@ -898,51 +1037,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 629365678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1241046317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1241046315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75b29b6c6428c984a8a73ffc2d58063b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.Turning.ContinuousTurnProvider
-  m_Mediator: {fileID: 629365679}
-  m_TransformationPriority: 0
-  m_TurnSpeed: 60
-  m_EnableTurnLeftRight: 1
-  m_EnableTurnAround: 0
-  m_LeftHandTurnInput:
-    m_InputSourceMode: 0
-    m_InputAction:
-      m_Name: Left Hand Turn
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: bc0319b3-e5e8-4285-af51-21c468a4c521
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_InputActionReference: {fileID: 0}
-    m_ObjectReferenceObject: {fileID: 0}
-    m_ManualValue: {x: 0, y: 0}
-  m_RightHandTurnInput:
-    m_InputSourceMode: 2
-    m_InputAction:
-      m_Name: Right Hand Turn
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: fd507e34-8f77-4050-aa71-60007104c7c9
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_InputActionReference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-    m_ObjectReferenceObject: {fileID: 0}
-    m_ManualValue: {x: 0, y: 0}
 --- !u!114 &1241046318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,7 +1044,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241046315}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9f365cf844c03449bc8973eead2c3c1, type: 3}
   m_Name: 
@@ -1963,6 +2057,73 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   handAnimator: {fileID: 1651385823}
+--- !u!1001 &1680274780
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1012979893}
+    m_Modifications:
+    - target: {fileID: 2521991836627487249, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_Name
+      value: Silenced Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.028
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.027
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+--- !u!4 &1680274781 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3005091284565987499, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+  m_PrefabInstance: {fileID: 1680274780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1680274782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2521991836627487249, guid: c6ca7e6ee0e422649bbcc691e8d44290, type: 3}
+  m_PrefabInstance: {fileID: 1680274780}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1697958484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2322,6 +2483,11 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &1881244119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8841706926471734270, guid: 2fd3e07afe5b461490fb8e314976b1b0, type: 3}
+  m_PrefabInstance: {fileID: 2116100810}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1894845170
 GameObject:
   m_ObjectHideFlags: 0
