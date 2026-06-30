@@ -5,6 +5,7 @@ public class GuardDeathScript : MonoBehaviour
     public Animator animator;
     public GuardVisionScript guardVision;
     public SimplePatrolScript guardPatrol;
+    public GameObject decalPrefab;
 
     
     public void TriggerDeathAnimation()
@@ -12,5 +13,6 @@ public class GuardDeathScript : MonoBehaviour
         animator.SetTrigger("Dead");
         guardVision.enabled = false;
         guardPatrol.enabled = false;
+        decalPrefab.SetActive(false);
     }
 }
