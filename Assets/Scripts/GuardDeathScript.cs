@@ -6,6 +6,7 @@ public class GuardDeathScript : MonoBehaviour
     public GuardVisionScript guardVision;
     public SimplePatrolScript guardPatrol;
     public GameObject decalPrefab;
+    public GameObject weaponToDestroy;
 
     
     public void TriggerDeathAnimation()
@@ -14,5 +15,6 @@ public class GuardDeathScript : MonoBehaviour
         guardVision.enabled = false;
         guardPatrol.enabled = false;
         decalPrefab.SetActive(false);
+        Destroy(weaponToDestroy);
     }
 }

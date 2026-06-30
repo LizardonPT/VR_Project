@@ -462,6 +462,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Menu Toggler",
+                    "type": "Button",
+                    "id": "16bf5782-d6ea-41bc-840d-9a36d48a2beb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -880,6 +889,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Weapon Toggler",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4b59fb71-8435-495d-85dc-5b650a543855",
+                    "path": "<XRController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu Toggler",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
