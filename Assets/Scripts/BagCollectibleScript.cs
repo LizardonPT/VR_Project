@@ -3,6 +3,9 @@ using TMPro;
 
 public class BagCollectibleScript : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip collectSound;
+    
     public int currentItems;
     public int maxItems = 7;
 
@@ -19,6 +22,7 @@ public class BagCollectibleScript : MonoBehaviour
     {
         if (other.CompareTag("Collectible"))
         {
+            audioSource.PlayOneShot(collectSound);
             Destroy(other.gameObject);
             currentItems++;
             itemsText.text = "Gold:\n" + currentItems.ToString() + "/" + maxItems.ToString();
